@@ -9,4 +9,4 @@ https://www.figma.com/proto/uMm7lVRfkVi77DbS7diKZX/programmeerimine?node-id=1-3&
 
 Alfaversiooni vahearuanne:
 
-Koostöö sujub hästi: arutame regulaarselt projekti funktsioonide ja toimimise üle. Disaini ja kujundusega tegeleb Kevin, veebilehe kujundusega Roland, ühiselt tegeleme Pythoni koodi osaga. Projekti üldine ajakulu on olnud 10+ tundi. Edasised plaanid on päriselt Pythoni koodimisega alustada. Hetkeseisuga tehisaru kasutanud CSS puhul omaduste otsimiseks ja meelde tuletamiseks.
+Koostöö sujub hästi: arutame regulaarselt projekti funktsioonide ja toimimise üle. Disaini ja kujundusega tegeleb Kevin, veebilehe kujundusega Roland, ühiselt tegeleme Pythoni koodi osaga. Projekti üldine ajakulu on olnud 10+ tundi. Edasised plaanid on päriselt Pythoni scrapimisega, JS-ga alustada. Hetkeseisuga tehisaru kasutanud CSS puhul omaduste otsimiseks ja meelde tuletamiseks.
