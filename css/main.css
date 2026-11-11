@@ -1,0 +1,226 @@
+/*! Project RUNO  */
+
+/* * Veebirakendus, mis võimaldab võrrelda väärismetallide ja aktsiate ajaloolist kasumit/kahjumit ning näha,
+* kui palju oleks algne investeering tänaseks väärt. Samuti välja selgitada, kas oliksid kasumis rohkem väärismetallisse
+* investeeringuga või pigem aktsiasse */
+
+/** Autorid: Roland Kutsei, Kevin Reinberg*/
+
+/* ? Kasutatud allikad: 
+? MDN: https://developer.mozilla.org/en-US/
+? Claude AI: https://claude.ai */
+/*? Icons: https://icons8.com/icons */
+
+/*? Tehisaru kasutamine:  */
+/* ? CSS puhul oli kasutatud AI abi CSS-i omaduste(properties) otsimiseks, meelde tuletamiseks, kuna see on effektiivseim viis,
+? kuidas neid leida. Muus osas on CSS, HTML(täielikult) kirjutatud iseseisvalt. */
+
+/* Creating variables for the project */
+:root {
+  --color-primary: #446080;
+  --color-secondary: #587392;
+  --highlight-primary: #2c496b;
+  --text-color-primary: #fff;
+  --background-color: #202428;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Def the classes that are used more than once */
+
+.background-color-primary {
+  background-color: var(--color-primary);
+}
+
+.background-color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 5rem;
+  color: var(--text-color-primary);
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+.table {
+  width: 100%;
+  flex: 1;
+  margin-top: 0.5rem;
+  border-radius: 15px;
+}
+
+.shadow {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 6rem;
+
+  span {
+    padding-left: 2rem;
+    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-block: 2rem;
+
+  section {
+    width: 47vw;
+  }
+}
+
+.table-1 {
+  display: flex;
+  flex-direction: column;
+
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table .table-header {
+    margin-top: 0.5rem;
+    /* ? 46vw because the parent element is 47vw and we and 0.5rem space left and right */
+    width: 46vw;
+    height: 5rem;
+    border-radius: calc(15px - 0.5rem);
+  }
+
+  .table .table-content {
+    flex: 1;
+    /*? 46vw because the parent element is 47vw and we and 0.5rem space left and right */
+    width: 46vw;
+    margin-block: 0.5rem;
+    border-radius: calc(15px - 0.5rem);
+  }
+  /* div p {
+    text-align: center;
+    width: 10rem;
+    height: 4rem;
+  } */
+}
+
+.table-2 {
+  display: flex;
+  flex-direction: column;
+
+  .button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+
+    .button {
+      flex: 1;
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 100%;
+        margin: 0 0.5rem;
+        border-radius: calc(15px - 0.5rem);
+      }
+    }
+  }
+
+  .table .table-button {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: calc(15px - 0.5rem);
+    /* position: relative;
+    top: 10px;
+    left: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      position: relative;
+      font-size: 5rem;
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+
+    h2 {
+      margin-left: 2rem;
+    }
+
+    .footer-specifications {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  .footer-divider {
+    width: 1px;
+    height: 4rem;
+    background-color: #fff;
+  }
+
+  #location {
+    margin-right: 2rem;
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+  }
+}

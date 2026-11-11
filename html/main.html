@@ -1,0 +1,71 @@
+<!--! Project RUNO -->
+
+<!--* Veebirakendus, mis võimaldab võrrelda väärismetallide -->
+<!--* ja aktsiate ajaloolist kasumit/kahjumit ning näha, * kui palju oleks algne -->
+<!--* investeering tänaseks väärt. Samuti välja selgitada, kas oliksid kasumis rohkem -->
+<!--* väärismetallisse * investeeringuga või pigem aktsiasse -->
+
+<!--* Autorid: Roland Kutsei, Kevin Reinberg -->
+
+<!--? Kasutatud allikad: -->
+<!--? MDN: https://developer.mozilla.org/en-US/ -->
+<!--? Claude AI: https://claude.ai -->
+<!--? Icons: https://icons8.com/icons -->
+
+<!--? Tehisaru kasutamine: -->
+<!--? CSS puhul oli kasutatud AI abi CSS-i omaduste(properties) otsimiseks, meelde tuletamiseks, kuna see on effektiivseim viis, -->
+<!--? kuidas neid leida. Muus osas on CSS, HTML(täielikult) kirjutatud iseseisvalt. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Runo</title>
+  </head>
+  <body>
+    <header class="background-color-primary">
+      <span>&dollar;&dollar;</span>
+      <h1>InveSim</h1>
+    </header>
+    <main>
+      <section class="table-1">
+        <div>
+          <p class="button background-color-primary">Hõbe</p>
+          <p class="button background-color-primary">S&P500</p>
+        </div>
+        <div class="table background-color-primary">
+          <div class="table-header shadow background-color-secondary"></div>
+          <div class="table-content shadow background-color-secondary"></div>
+        </div>
+      </section>
+      <section class="table-2">
+        <div class="button-div">
+          <div class="button background-color-primary">
+            <p class="date background-color-secondary">DD/MM/YY</p>
+          </div>
+          <div class="button background-color-primary">
+            <p class="date background-color-secondary">DD/MM/YY</p>
+          </div>
+        </div>
+        <div class="table background-color-primary">
+          <div class="table-button shadow background-color-secondary">
+            <img src="/img/plus.ong" alt="plus sign" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="background-color-primary">
+      <div class="footer-info">
+        <h2>Meist</h2>
+        <span class="footer-divider"></span>
+        <div class="footer-specifications">
+          <p>Programmeerimine (LTAT.03.001)</p>
+          <p>Projekt Runo</p>
+          <p>Kaasautorid Kevin Reinberg ja Roland Kutsei</p>
+        </div>
+      </div>
+      <span id="location">Tartu 2026</span>
+    </footer>
+  </body>
+</html>
